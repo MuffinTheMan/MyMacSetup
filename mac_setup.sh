@@ -35,4 +35,12 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 # Laravel Homestead--follow guide
 
-# Create ~/.profile
+# Create ~/.profile to setup aliases
+echo 'alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+alias la="ls -a"
+alias ll="ls -l"' > ~/.profile
+source ~/.profile
