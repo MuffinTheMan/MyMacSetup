@@ -24,6 +24,7 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 # Disable guest user
 
 # Install Homebrew
+# * Confirmation and password required
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install git-flow
@@ -44,3 +45,7 @@ alias .....="cd ../../../.."
 alias la="ls -a"
 alias ll="ls -l"' > ~/.profile
 source ~/.profile
+
+# Restart computer in order for all changes to take effect
+# * Password required
+sudo shutdown -r now
