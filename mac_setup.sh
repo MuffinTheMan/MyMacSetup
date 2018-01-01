@@ -30,6 +30,14 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 # Install Mac App Store CLI application
 brew install mas
 
+# Install Visual Studio Code (VS Code)
+# * password required
+brew cask install visual-studio-code
+
+# Configure git user info
+# git config --global user.email "email@example.com"
+# git config user.name "Mona Lisa"
+
 # Install git-flow
 # brew install git-flow
 
