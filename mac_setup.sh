@@ -27,6 +27,9 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 # * Confirmation and password required
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# Install Mac App Store CLI application
+brew install mas
+
 # Install git-flow
 # brew install git-flow
 
