@@ -34,6 +34,12 @@ brew install mas
 # * password required
 brew cask install visual-studio-code
 
+# Install Google Chrome
+curl https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg -#o chrome.dmg
+sudo hdiutil attach chrome.dmg
+cp -r /Volumes/Google\ Chrome/Google\ Chrome.app /Applications/
+sudo hdiutil detach /Volumes/Google\ Chrome/
+
 # Configure git user info
 # git config --global user.email "email@example.com"
 # git config user.name "Mona Lisa"
