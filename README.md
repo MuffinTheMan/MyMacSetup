@@ -7,3 +7,4 @@ Run with `sh mac_setup.sh` and periodically check in on the script to give your 
 
 - Have user give password up front and pass it along wherever needed to avoid needing to babysit the script to keep it going.
 - Pass through confirmation prompts (avoid more babysitting).
+- Add config file for user configuration (such as for git user setup).

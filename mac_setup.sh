@@ -34,6 +34,9 @@ brew install mas
 # * password required
 brew cask install visual-studio-code
 
+# Install MacDown
+brew cask install macdown
+
 # Install Google Chrome
 curl https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg -#o chrome.dmg
 sudo hdiutil attach chrome.dmg
