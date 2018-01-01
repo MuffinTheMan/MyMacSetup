@@ -49,6 +49,9 @@ alias la="ls -a"
 alias ll="ls -l"' > ~/.profile
 source ~/.profile
 
+# Install all recommended updates
+softwareupdate -ir
+
 # Restart computer in order for all changes to take effect
 # * Password required
 sudo shutdown -r now
