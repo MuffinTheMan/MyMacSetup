@@ -43,6 +43,15 @@ sudo hdiutil attach chrome.dmg
 cp -r /Volumes/Google\ Chrome/Google\ Chrome.app /Applications/
 sudo hdiutil detach /Volumes/Google\ Chrome/
 
+# Install Node
+curl https://nodejs.org/dist/v8.9.3/node-v8.9.3.pkg -#o node.pkg
+sudo installer -package node.pkg -target /
+rm node.pkg
+
+# Wrong URL--not a DMG
+# curl https://www.dropbox.com/download?os=mac -#o dropbox.dmg
+# sudo hdiutil attach dropbox.dmg
+
 # Configure git user info
 # git config --global user.email "email@example.com"
 # git config user.name "Mona Lisa"
