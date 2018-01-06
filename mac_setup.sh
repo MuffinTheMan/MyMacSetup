@@ -44,10 +44,18 @@ cp -r /Volumes/Google\ Chrome/Google\ Chrome.app /Applications/
 sudo hdiutil detach /Volumes/Google\ Chrome/
 rm chrome.dmg
 
+# Install VirtualBox
+curl http://download.virtualbox.org/virtualbox/5.2.4/VirtualBox-5.2.4-119785-OSX.dmg -#o vb.dmg
+sudo hdiutil attach vb.dmg
+sudo installer -package /Volumes/VirtualBox/VirtualBox.pkg -target /
+sudo hdiutil detach /Volumes/VirtualBox
+rm vb.dmg
+
 # Install MAMP
-curl http://downloads2.mamp.info/MAMP-PRO/releases/4.2.1/MAMP_MAMP_PRO_4.2.1.pkg -#o mamp.pkg
-sudo installer -package mamp.pkg -target /
-rm mamp.pkg
+# curl http://downloads2.mamp.info/MAMP-PRO/releases/4.2.1/MAMP_MAMP_PRO_4.2.1.pkg -#o mamp.pkg
+# curl http://downloads3.mamp.info/MAMP-PRO/releases/3.5.2/MAMP_MAMP_PRO_3.5.2.pkg -#o mamp.pkg
+# sudo installer -package mamp.pkg -target /
+# rm mamp.pkg
 
 # Install Node
 curl https://nodejs.org/dist/v8.9.3/node-v8.9.3.pkg -#o node.pkg
