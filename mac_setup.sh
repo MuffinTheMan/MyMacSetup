@@ -42,6 +42,12 @@ curl https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg -#o chrome.dm
 sudo hdiutil attach chrome.dmg
 cp -r /Volumes/Google\ Chrome/Google\ Chrome.app /Applications/
 sudo hdiutil detach /Volumes/Google\ Chrome/
+rm chrome.dmg
+
+# Install MAMP
+curl http://downloads2.mamp.info/MAMP-PRO/releases/4.2.1/MAMP_MAMP_PRO_4.2.1.pkg -#o mamp.pkg
+sudo installer -package mamp.pkg -target /
+rm mamp.pkg
 
 # Install Node
 curl https://nodejs.org/dist/v8.9.3/node-v8.9.3.pkg -#o node.pkg
