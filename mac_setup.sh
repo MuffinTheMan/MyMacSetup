@@ -51,6 +51,13 @@ sudo installer -package /Volumes/VirtualBox/VirtualBox.pkg -target /
 sudo hdiutil detach /Volumes/VirtualBox
 rm vb.dmg
 
+# Install Vagrant
+curl https://releases.hashicorp.com/vagrant/2.0.1/vagrant_2.0.1_x86_64.dmg?_ga=2.43116581.1083987675.1515273065-704791525.1515273065  -#o vagrant.dmg
+sudo hdiutil attach vagrant.dmg
+sudo installer -package /Volumes/Vagrant/vagrant.pkg -target /
+sudo hdiutil detach /Volumes/Vagrant
+rm vagrant.dmg
+
 # Install MAMP
 # curl http://downloads2.mamp.info/MAMP-PRO/releases/4.2.1/MAMP_MAMP_PRO_4.2.1.pkg -#o mamp.pkg
 # curl http://downloads3.mamp.info/MAMP-PRO/releases/3.5.2/MAMP_MAMP_PRO_3.5.2.pkg -#o mamp.pkg
