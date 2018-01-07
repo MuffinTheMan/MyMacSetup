@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source user_settings.config
+
 # Update KeyRepeat speed/interval (see http://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x)
 defaults write -g InitialKeyRepeat -int 15 # normal minimum is 15 (225 ms)
 defaults write -g KeyRepeat -int 2 # normal minimum is 2 (30 ms)
@@ -77,8 +79,8 @@ rm node.pkg
 # sudo hdiutil attach dropbox.dmg
 
 # Configure git user info
-# git config --global user.email "email@example.com"
-# git config user.name "Mona Lisa"
+git config --global user.email $git_email
+git config user.name $git_username
 
 # Install git-flow
 # brew install git-flow
