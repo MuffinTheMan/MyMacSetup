@@ -63,9 +63,8 @@ sudo installer -package /Volumes/Vagrant/vagrant.pkg -target /
 sudo hdiutil detach /Volumes/Vagrant
 rm vagrant.dmg
 
-# Install MAMP
+# Install MAMP * For some reason, this "works" but doesn't. It installs it, but MySQL doesn't start. Installing manually worked. *
 # curl http://downloads2.mamp.info/MAMP-PRO/releases/4.2.1/MAMP_MAMP_PRO_4.2.1.pkg -#o mamp.pkg
-# curl http://downloads3.mamp.info/MAMP-PRO/releases/3.5.2/MAMP_MAMP_PRO_3.5.2.pkg -#o mamp.pkg
 # sudo installer -package mamp.pkg -target /
 # rm mamp.pkg
 
